@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Swiper中文网基础演示(www.swiper.com.cn)</title>
+<!--Swiper3.0.4-->
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+.blue-slide {
+	background: #4390EE;
+}
+.red-slide {
+	background: #CA4040;
+}
+.orange-slide {
+	background: #FF8604;
+}
+.swiper-slide {
+	line-height: 300px;
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+}
+.swiper-container {
+    width: 1200px;
+    height: 450px;
+}
+.swiper-pagination{
+	width: 16px;
+	height: 16px;
+}  
+
+</style>
+</head>
+<body>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide blue-slide"><img src="../../static/img/6d5e0a40b0d40091fa80085a42014626.jpg" alt=""></div>
+    <div class="swiper-slide red-slide"><img src="../../static/img/d0ac5c74d23c13784ce49250ae19c8c6.jpg" alt=""></div>
+    <div class="swiper-slide orange-slide"><img src="../../static/img/d93c3d82627a392e0fb16c69cd78b243.jpg" alt=""></div>
+    <div class="swiper-slide orange-slide"><img src="../../static/img/9ecb6144e9339e9d13c07aa1d0122009.jpg" alt=""></div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+  var mySwiper = new Swiper('.swiper-container',{
+    loop: true,
+	autoplay: 2000,
+	// direction: 'vertical',
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+  });    
+       
+</script>
+</body>
+</html>

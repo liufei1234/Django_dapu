@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content_css %}
+{% load static %}
+<link rel="stylesheet" href="../static/css/login.css">
+{% endblock%}
+{% block content %}
+	<div id="login">
+		<form action="###" method="post" id="fo_login">
+			<h2>用户登录</h2>
+			<p><label for="id">用户名：</label><input type="text" name='id' id="id"></p>
+			<p><label for="pwd">密码：</label><input type="password" name='pwd' id="pwd"></p>
+			<p><input type="submit" value="登录" ><a href="###">忘记密码</a></p>
+			<p><a href="###">手机校验登录</a><span>|</span><a href="###">免费注册</a></p>
+		</form>
+	</div>
+{% endblock%}

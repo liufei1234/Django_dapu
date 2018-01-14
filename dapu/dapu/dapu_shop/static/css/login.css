@@ -1,0 +1,105 @@
+iframe{
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+	overflow-x:visible;
+	overflow-y:visible; 
+}
+#if_header{
+	height: 70px;
+}
+#if_footer{
+	height: 97px;
+	
+}
+
+#login{
+	width: 1000px;
+	height: 410px;
+	margin:50px auto 60px;
+	background: url(../img/login_bg.jpg) no-repeat center;
+}
+#fo_login{
+	width: 500px;
+	height: 370px;
+	margin: 10px;
+	padding:10px;
+	border-radius: 5px 5px;
+	background: #fff;
+	opacity: .9;
+	float: right;
+	text-align: center;
+}
+h2{
+	font-size: 26px;
+	color: rgb(135, 123, 116);
+	border-bottom: 1px solid rgb(135, 123, 116);
+	text-align: center;
+	margin-bottom: 50px;
+}
+#fo_login p{
+	height: 30px;
+		margin-top: 20px;
+}
+#fo_login p>label,#fo_login input{
+	font-size: 14px;
+	outline: none;
+	color: #6b6b6b;
+	line-height: 30px;
+
+}
+#fo_login p>label{
+	width: 160px;
+	text-align: right;
+	display: block;
+	float: left;
+}
+#fo_login p>input{
+	float: left;
+	width: 320px;
+
+}
+#fo_login input[type='text'],#fo_login input[type='password']{
+	width: 147px;
+	height: 20px;
+	border:1px solid rgb(218, 217, 217);
+	background-color: #fff;
+	padding: 4px 6px;
+	border-radius: 4px;
+	
+	transition:border linear .2s,box-shadow linear .2s;
+}
+
+#fo_login input[type='text']:focus,#fo_login input[type='password']:focus{
+	border:1px solid #ccc;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), #aaf6f9 0 0px 10px;
+}
+#fo_login p>input[type='submit']{
+	padding:4px 12px;
+	border-radius:4px;
+	background-image:linear-gradient(to bottom,#5bc0de,#2f96b4);
+	width: auto;
+	outline: none;
+	font-size: 14px;
+	line-height: 20px;
+	border:1px solid #2f96b4;
+	vertical-align: middle;
+	cursor: pointer;
+}
+#fo_login p:nth-of-type(3),#fo_login p:nth-of-type(4){
+	width: 340px;
+	float: right;
+	margin-left: 160px;
+	text-align: left;
+}
+#fo_login p:nth-of-type(3)>a{
+	line-height: 30px;
+	margin-left: 5px;
+	color: #4E8FC2;
+}
+#fo_login p:nth-of-type(4)>span{
+	margin: 0 5px;
+}
+#fo_login p:nth-of-type(4)>a{
+	color: #6b6b6b;
+}

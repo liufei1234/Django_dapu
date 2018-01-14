@@ -1,0 +1,374 @@
+{% extends 'base.html' %}
+{% block content_css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    {% endblock %}
+{% block content %}
+	<!-- 轮播图 -->
+	<link rel="stylesheet" href="../static/css/swiper.min.css">
+	<script type="text/javascript" src="../static/js/swiper.min.js"></script>
+	<script type="text/javascript">
+	  var mySwiper = new Swiper('.swiper-container',{
+		loop: true,
+		autoplay: 2000,
+		// direction: 'vertical',
+
+		// 如果需要分页器
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+	  });
+
+	</script>
+	{% include t %}
+	<!-- select -->
+	<div id="select">
+		<a href="###"><img src="/static/img/20170811003_jingxuan.jpg" alt="jingxuan"></a>
+		<div>
+			<figure>
+				<a href="###"><img src="/static/img/2017083009.jpg" alt="图片丢失"></a>
+				<figcaption>
+					<dl>
+						<dt>
+							<img src="/static/img/棉仔头像.jpg" alt="">
+						</dt>
+						<dd>
+							<h3>棉仔</h3>
+							<p>
+								<span>2017-08-30</span>
+								<span>北京</span>
+								<span>1331</span>
+								<span>36</span>
+								<span>10</span>
+							</p>
+						</dd>
+					</dl>
+					<div>
+						<h2>《大朴828五周年庆动画：遇见你，刚刚好...</h2>
+						<p>一只美丽的蜂鸟飞进了二楼的露台，被风吹起的床单吸引了它的注意力，它好奇地在飞进了...</p>
+					</div>
+				</figcaption>
+			</figure>
+				<figure>
+				<a href="###"><img src="../static/img/朴素说03.jpg" alt="图片丢失"></a>
+				<figcaption>
+					<dl>
+						<dt>
+							<img src="../static/img/棉仔头像.jpg" alt="">
+						</dt>
+						<dd>
+							<h3>棉仔</h3>
+							<p>
+								<span>2017-08-29</span>
+								<span>北京</span>
+								<span>1608</span>
+								<span>24</span>
+								<span>10</span>
+							</p>
+						</dd>
+					</dl>
+					<div>
+						<h2>《朴素说03期：老郭和他的毛笔</h2>
+						<p>书法丹青是他的工作，是他的乐趣，亦是他的生活，更是他的人生......</p>
+					</div>
+				</figcaption>
+			</figure>
+				<figure>
+				<a href="###"><img src="../static/img/微信图片_20170811140014_副本.jpg" alt="图片丢失"></a>
+				<figcaption>
+					<dl>
+						<dt>
+							<img src="../static/img/微信图片_201708      14165508_副本.jpg" alt="">
+						</dt>
+						<dd>
+							<h3>唐瑾</h3>
+							<p>
+								<span>2017-08-24</span>
+								<span>深圳</span>
+								<span>1603</span>
+								<span>11</span>
+								<span>5</span>
+							</p>
+						</dd>
+					</dl>
+					<div>
+						<h2>大朴代言人08月期：孩子便是我追求的动力...</h2>
+						<p>我是全职妈妈，想跟你们分享一下我的世界与生活。</p>
+					</div>
+				</figcaption>
+			</figure>
+		</div>
+	</div>
+	<!-- 初秋 -->
+	<div id="autumn">
+		<a href="###"><img src="../static/img/6e436dad69bb39fe6d5a3b823e2b9f27.jpg" alt=""></a>
+		<div>
+			<a href="###">
+				<img src="../static/img/7304ee85098b184af17774266259fbe1.jpg" alt="">
+				<div>
+					<p>天然新疆棉针织纯色件套</p>
+					<p>RMB:399</p>
+				</div>
+			</a>
+			<a href="###"><img src="../static/img/7304ee85098b184af17774266259fbe1.jpg" alt="">
+				<div>
+					<p>全工艺精梳纯棉600根绣花四件套</p>
+					<p>RMB:1899</p>
+				</div>
+			</a>
+			<a href="###"><img src="../static/img/7304ee85098b184af17774266259fbe1.jpg" alt="">
+				<div>
+					<p>天然新疆棉针织印花四件套</p>
+					<p>RMB:769</p>
+				</div>
+			</a>
+		</div>	
+	</div>
+	<!-- 热销 -->
+	<div id="hot">
+		<a href="###"><img src="../static/img/20170811003_news.jpg" alt=""></a>
+		<div id="hot_list">
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/1c536d37ff7539f8034eec1a557b03db.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/4776cfa818b6ce88dd3d02249ab5e27a.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/23740d45a5c7dc1fc4ae5c198d6d056f.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/5960fb62fe3ed61a8d5fc7d24057ad36.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/5a65fc67d65bc5b756a5fca648dd0edf.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/4ba0e40eeb310d8c9662b05356022c3a.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/14cb8819911f8a4c273a81447aa9a4a0.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/fc821c9b7174a05add9d0fd0737518a7.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/903889345c0d66dc049bed69396de4b6.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/99c2141ae9e4f15ba5809379124cd115.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/eb70f8285121c177d96ed403ec7b894b.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/c878ee1d6d96fcd556b9510852268989.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/42e3b7ec50ff29d173c9de703372051f.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/9080e92c87db7555debbea0910608b5f.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/477f2f86b8a1d4b0f0161d98e5504ef7.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+			<figure class='hot_shop'>
+				<a href="###"><img src="../static/img/48511ffa0b7fc5f75cff360d47861929.jpg" alt="">
+				<div>
+					<p>
+						精梳棉翻领夹棉保暖男式家居袍
+					</p>
+					<p>
+						RMB:299
+					</p>
+				</div>
+				</a>
+		
+			</figure>
+		</div>
+	</div>
+	<!-- app -->
+	<div id="app">
+		<figure>
+			<img src="../static/img/appdown_upd.jpg" alt="">
+			<figcaption>
+				大朴APP下载
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="../static/img/appdown_upd.jpg" alt="">
+			<figcaption>
+				大朴APP下载
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="../static/img/appdown_upd.jpg" alt="">
+			<figcaption>
+				大朴APP下载
+			</figcaption>
+		</figure>
+		<figure>
+			<img src="../static/img/appdown_upd.jpg" alt="">
+			<figcaption>
+				大朴APP下载
+			</figcaption>
+		</figure>
+	</div>
+{% endblock %}
+{% block footer_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+<link rel="stylesheet" href="{% static 'css/footer_color.css' %}">
+{% endblock %}
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大朴网-
+        {% block title%}无甲醛棉品,始于大朴 30天无条件退换货、货到付款、88元包邮{% endblock%}
+    </title>
+    {% block reset_css %}
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    {% endblock %}
+</head>
+<body bgcolor="#fff" style="background-color:#fff;">
+    {% block header_css %}
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    {% endblock %}
+    {% include 'header.html' %}
+
+    {% block nav_css %}
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    {% endblock %}
+    {% include 'nav.html' %}
+
+
+    {% block content_css %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+
+    {% block footer_css%}
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    {% endblock%}
+    {% include 'footer.html' %}
+</body>
+</html>

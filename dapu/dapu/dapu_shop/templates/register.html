@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+{% endblock%}
+{% block content %}
+	<div id="login">
+		<form action="###" method="post" id="fo_login">
+			<p><label for="">手机号&nbsp;:&nbsp;</label><input type="text" name="tel"></p>
+			<p><label for="">图片码&nbsp;:&nbsp;</label><input type="text" name="tel"><img src="../static/img/passport.png" alt=""><input type="button" value="获取短信码"></p>
+			<p>请先输入图片验证码的计算结果，再点击获取短信码</p>
+			<p><label for="">短信码&nbsp;:&nbsp;</label><input type="text" name="tel"></p>
+			<p><label for="">密码&nbsp;:&nbsp;</label><input type="password" name="tel"></p>
+			<p><label for="">确认密码&nbsp;:&nbsp;</label><input type="password" name="tel"></p>
+			<p><input type="checkbox" name=""><span>同意注册协议</span><a href="###">《大朴用户协议》</a></p>
+			<p><input type="submit" value="同意注册"><span>我已经注册，现在就</span><a href="###">登录</a></p>
+		</form>
+	</div>
+{% endblock %}

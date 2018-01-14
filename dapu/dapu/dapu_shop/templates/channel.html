@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>渠道客户</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/channel.css">
+	<script type="text/javascript" src="/static/js/channel.js"></script>
+	<!-- <iframe src="./header.html" id="change" scrolling ="no"></iframe> -->
+</head>
+<body>
+	<div id="channel">
+		<p class="channel1 fir"><img src="/static/img/channel_banner.jpg"></p>
+		<p class="ch_nav">
+			<a href="#profile">公司简介</a>
+			<a href="#honor">荣誉</a>
+			<a href="#channel_banner1">产品优势</a>
+			<a href="#channel_banner2">加盟条件</a>
+			<a href="#flow">流程</a>
+			<a href="#advantage">加盟优势</a>
+			<a href="#support">支持</a>
+			<a href="#storefront">店面图片</a>
+			<a href="#phonecall">咨询热线</a>
+		</p>
+		<p class="channel1" id="profile"><img src="/static/img/profile.jpg"></p>
+		<p class="channel1" id="honor"><img src="/static/img/honor.jpg"></p>
+		<p class="channel1" id="channel_banner1"><img src="/static/img/channel_banner1.jpg"></p>
+		<p class="channel1"><img src="/static/img/initiate.jpg"></p>
+		<p class="channel1" id="channel_banner2"><img src="/static/img/channel_banner2.jpg"></p>
+		<p class="channel1" id="flow"><img src="/static/img/flow.jpg"></p>
+		<p class="channel1" id="advantage"><img src="/static/img/advantage.jpg"></p>
+		<p class="channel1" id="support"><img src="/static/img/support.jpg"></p>
+		<p class="channel1" id="storefront"><img src="/static/img/storefront.jpg"></p>
+		<p class="channel1"><img src="/static/img/distribute.jpg"></p>
+		<p class="channel1"><img src="/static/img/distribute1.jpg"></p>
+		<p class="channel1" id="phonecall"><img src="/static/img/phonecall.jpg"></p>
+		<form id="info">
+			<p class="join">加盟信息</p>
+			<ul class="join1">
+				<li><p>姓名*：<input type="text" required="required"></p></li>
+				<li><p>性别：<input type="radio" value="male" checked="checked" name="sex" class="sx sx1">男<input type="radio" class="sx sx2" value="female" name="sex">女</p></li>
+				<li><p>手机号*：<input type="text" name="phone" required="required"></p></li>
+				<li><p>电子邮件：<input type="text"></p></li>
+				<li class="prov">
+					<div class="ind prov1">
+						地区*：
+						<select id="province">
+							<option>省份</option>
+						</select>
+						<select id="city">
+							<option>市/区</option>
+						</select>
+						<select id="area">
+							<option>区/县/街道</option>
+						</select>
+					</div>
+				</li>
+				<li><p>地址*：<input type="text" required="required"></p></li>
+				<li>
+					<div class="ind fl">
+						<select name="" id="">
+							<option>加盟方式</option>
+							<option>专卖店</option>
+							<option>专柜</option>
+						</select>
+						<select name="" id="">
+							<option>店铺情况</option>
+							<option>无</option>
+							<option>已有专卖店</option>
+							<option>已有专柜</option>
+						</select>
+						<select name="" id="">
+							<option>投资预算</option>
+							<option>10-20万</option>
+							<option>20-30万</option>
+						</select>
+					</div>
+				</li>
+				<li id="masg">
+					<div class="ind msg">
+						<label>留言：</label>
+						<textarea>
+						
+						</textarea>
+					</div>
+				</li>
+				<li class="prov">
+					<button class="sub"></button>
+				</li>
+			</ul>
+			
+		</form>
+		<p class="channel1"><img src="/static/img/end.jpg"></p>
+	</div>
+</body>
+<script type="text/javascript">
+	var provinceArr = ['北京','上海','深圳']
+
+	var cityArr = [['东城','西城'],['徐汇','浦东'],['宝安','龙岗']]
+
+	var areaArr = [['朝阳', '海淀'],['宝山', '虹口'],['盐田', '罗湖']]
+
+	//获取下拉框
+	var leftSel = document.querySelector('#province');
+	var middleSel = document.querySelector('#city');
+	var rightSel = document.querySelector('#area');
+
+	//初始化页面(左边的option)
+	function initView () {
+		for (var i = 0;i < provinceArr.length;i++) {
+			createOption(leftSel,provinceArr[i]);
+		}
+	}
+
+	//创建option的函数(顺便添加到某个下拉框中)
+	//参数是 下拉框元素 和 要添加option所用的值
+	function createOption (sel,optionValue) {
+		var option = document.createElement('option');
+		option.innerText = optionValue;
+		sel.appendChild(option);
+	}
+
+	//切换省份
+	leftSel.onchange = function () {
+
+		//每次切换省份要把之前的城市option清空掉
+		middleSel.length = 1;
+
+		//另一种清空方法
+		// while (rightSel.length >1) {
+		// 	rightSel.removeChild(rightSel.lastElementChild);
+		// }
+
+		console.log(this.selectedIndex - 1);
+		//找出省份对应的城市数组
+		var arr = cityArr[this.selectedIndex - 1];
+		console.log(arr);
+
+		if (arr) {
+			for (var i = 0;i <arr.length;i++) {
+				createOption(middleSel,arr[i]);
+			}
+		}
+	}
+
+	initView();
+</script>
+</html>

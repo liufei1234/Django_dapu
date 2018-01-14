@@ -1,0 +1,115 @@
+
+.mask_shade{
+	width: 1200px;
+	height: 270px;
+	opacity: 0.9;
+	background-color: #fff;
+	z-index: 1;
+	display: none;
+}
+
+/* 导航 */
+#nav{
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	font-size: 12px;
+}
+#nav a{
+	text-decoration: none;
+}
+#nav ul{
+	width: 1200px;
+	display: flex;
+	height: 50px;
+	position: relative;
+	flex-direction:row;
+	list-style: none;
+	padding-left:0;
+}
+#nav ul li{
+	width: 110px;
+	height: 50px;
+	line-height: 50px;
+	flex-grow:1;
+	text-align: center;
+	background: url(../imgs/dapu_menu_diandian.png) no-repeat right 22px;
+	position: relative;
+}
+
+#nav ul li:first-child{
+	width: 100px;
+}
+
+#nav ul li:last-of-type{
+	background: none;
+}
+
+#nav ul li>a{
+	color: #605046;
+	font-size: 14px;
+}
+
+
+
+
+
+/* 二级导航 */
+#nav .two_nav_box{
+	font-size: 0;
+	width: 750px;
+	height: 270px;
+	position: absolute;
+	top: 45px;
+	z-index: 9999;
+	display: none;
+}
+#nav ul li:hover .two_nav_box{
+	display: block;
+}
+#nav .two_nav {
+	width: 750px;
+	padding-left: 10px;
+	height: 270px;
+	text-align: left;
+	line-height: 30px;
+	font-size: 12px;
+}
+#nav .two_nav a{
+	margin-right: 6px;
+	color: #6B6B6B;
+	padding: 0 2px;
+
+}
+#nav .two_nav a:hover{
+	margin-right: 6px;
+	color: #fff;
+	background:#b2a89e;
+
+}
+#nav .two_nav>div a:first-child{
+	font-size: 14px;
+	font-weight: bold;
+	margin-right: 25px;
+	padding: 0;
+}
+#nav .two_nav>div a:first-child:hover{
+	text-decoration: underline;
+	background: none;
+	color: #6B6B6B;
+}
+#nav .mengBan{
+	position: absolute;
+	top: 45px;
+	z-index: 2px;
+}
+#nav ul:hover .mengBan{
+	display: block;
+}
+/*为什么会影响上方代码*/
+
+#nav ul li>a:hover{
+	font-weight: bold;
+};
+
+

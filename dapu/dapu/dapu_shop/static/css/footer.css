@@ -1,0 +1,35 @@
+#if_footer{
+    padding-top: 5px;
+    background-color:#fff;
+}
+#if_footer a{
+	text-decoration: none;
+	color: #6B6B6B;
+	cursor:pointer;
+}
+
+
+
+#if_footer img{
+	border: 0;
+	vertical-align: bottom;
+	width: 14px;
+	height: 16px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+#if_footer p{
+	padding: 4.7px 0;
+	color: #6B6B6B;
+}
+#if_footer p:first-of-type a:hover{
+	text-decoration: underline;
+}
+#if_footer span{
+	padding: 0 5px;
+}
+#if_footer p:last-of-type a{
+	color: #939393;
+}
+

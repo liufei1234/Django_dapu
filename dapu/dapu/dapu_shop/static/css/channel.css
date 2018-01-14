@@ -1,0 +1,173 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #949494;
+
+}
+
+li{
+	list-style: none;
+}
+
+body{
+	font: 14px "微软雅黑";
+	color: #000;
+}
+
+#channel{
+	width: 1333px;
+	margin: 0 auto;
+}
+
+.channel1{
+	width: 1333px;
+}
+
+/*.fir{
+	height: 555px;
+}*/
+
+img{
+	width: 100%;
+}
+
+#change{width:100%;height:420px;border-bottom:0;}
+
+#info{
+	width: 625px;
+	height: 750px;
+	margin: 0 auto;
+	padding-left: 185px;
+	border: 1px solid #dbdbdb;
+}
+
+.join1 li{
+	width: 494px;
+	height: 54px;
+	line-height: 54px;
+	border: 1px solid #dedede;
+	margin-bottom: -1px;
+
+}
+
+.join{
+	margin: 30px 0 14px 0;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+input{
+	/*outline: none;*/
+	border:none;
+	height: 24px;
+	width: 230px;
+}
+
+.sx{
+	height: auto;
+	width: auto;
+	
+}
+
+.sx1{
+	margin: 3px 5px 0 30px;
+}
+
+.sx2{
+	margin: 3px 5px 0 30px;
+}
+
+.join1 p{
+	text-indent: 1em;
+}
+
+.ind{
+	margin-left: 14px;
+}
+
+.join1 li:nth-of-type(5), .join1 li:nth-of-type(9){
+	border: none;
+}
+
+.prov1 select{
+	width: 108px;
+	height: 28px;
+	border: 1px solid #dedede;
+	color: #666;
+	font-size: 12px;
+}
+
+.prov1 select:first-of-type{
+	margin-left: 18px;
+}
+
+.fl select{
+	width: 108px;
+	height: 28px;
+	border: 1px solid #dedede;
+	color: #666;
+	font-size: 12px;
+}
+
+.msg textarea{
+	width: 260px;
+	height: 100px;
+	padding-left: 3px;
+	border: 0 none;
+	line-height: 24px;
+	vertical-align: middle;
+	font-family: "Microsoft YaHei";
+	resize: none;
+}
+
+.msg{
+	padding: 14px 18px;
+	margin-left: 0;
+}
+
+#masg{
+	height: 140px;
+}
+
+#masg>.ind{
+	height: 140px;
+	
+}
+
+.sub{
+	width: 238px;
+	height: 36px;
+	background: url("http://activity.dapuimg.com/dapu_2015032001_r3_c2.jpg");
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 1px #ff7373;
+	border: 0 none;
+	margin-top: 20px;
+}
+
+.ch_nav{
+	/*width: 1200px;*/
+	margin:0 auto;
+	height: 40px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	background-color: #fff;
+	opacity: 0.8;
+}
+
+.ch_nav>a{
+	font-size: 16px;
+	display: inline-block;
+	padding: 10px 30px;
+}
+
+

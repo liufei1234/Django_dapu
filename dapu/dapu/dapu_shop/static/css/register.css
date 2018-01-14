@@ -1,0 +1,100 @@
+
+#login{
+	width: 1200px;
+	height: 410px;
+	margin:0 auto ;
+
+	background: url(../img/register.jpg) no-repeat center;
+}
+#fo_login{
+	width: 500px;
+	height: 370px;
+	margin: 5px;
+	padding:10px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	border-radius: 5px 5px;
+	background: #fff;
+	opacity: .8;
+	float: right;
+	text-align: center;
+}
+#fo_login p{
+	width: 100%;
+	height: 27px;
+	margin-top: 17px;
+	color: #5e5e5e;
+}
+#fo_login label{
+	width: 95px;
+	display: block;
+	text-align: right;
+	height: 26px;
+	line-height: 26px;
+	float: left;
+
+}
+#fo_login p>input[type='text'],#fo_login p>input[type='password']{
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	width: 170px;
+	border: 1px solid #dad9d9;
+	padding:0 6px;
+	margin-right: 3px;
+	border-radius: 4px;
+	transition:border linear .2s,box-shadow linear .2s;
+
+}
+
+#fo_login p>input[type='text']:focus,#fo_login p>input[type='password']:focus{
+    border:1px solid #ccc;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), #aaf6f9 0 0px 10px;
+}
+#fo_login p:nth-of-type(2)>input[type='text']{
+	width: 89px;
+}
+#fo_login p:nth-of-type(2)>input[type='button']{
+	width: 79px;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-left:10px;
+	background-color: #eee;
+	border-radius: 4px;
+	border: 1px solid #dad9d9;
+}
+#fo_login p:nth-of-type(2) img{
+	float: left;
+	margin-top: 4.5px;
+	margin-left: 6px;
+	display: none;
+}
+#fo_login p:nth-of-type(3){
+	text-align: left;
+	text-indent: 95px;
+}
+#fo_login p:nth-of-type(2)>input[type='text']:focus~img{
+	display: block;
+}
+#fo_login p:nth-of-type(7),#fo_login p:nth-of-type(8){
+	width: 400px;
+	text-align: left;
+	float: right;
+	color: #6B6B6B;
+}
+
+#fo_login p:nth-of-type(8)>input[type='submit']{
+	width: 198px;
+	height: 40px;
+	border:1px solid #dad9d9;
+	line-height: 40px;
+	background-color: transparent;
+	font-size: 16px;
+	margin-right: 4px;
+	color: #6B6B6B;
+}
+#fo_login p:nth-of-type(8) a{
+	color: red;
+}

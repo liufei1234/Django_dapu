@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+{% block content %}
+	<link rel="stylesheet" type="text/css" href="../static/css/gallery.css"/>
+	<script type="text/javascript" src="../static/js/jquery-3.2.1.min.js">
+	</script>
+	<div id="good_chose">
+		<a href="/index">首页></a>
+		<span>大朴优选</span>
+	</div>
+	<div id="all_product">
+		<div class="product_menu">
+			<div class="all">
+				<span>所有商品</span>
+			</div>
+			<div class="classify">
+				<p class="choose"><a href="/gallery?id=1">大朴优选</a></p>
+				<div class="dapu">
+					<p class="dapu_eat"><a href="/gallery?id=1">烹饪食材</a></p>
+					<p><a href="">生鲜肉食</a><a href="/gallery?tg=1">野生菌菇</a></p>
+
+					<p class="dapu_eat"><a href="/gallery?id=2">新农鲜果</a></p>
+					<p><a href="/gallery?tg=2">冬枣</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=3">特色美食</a></p>
+					<p><a href="/gallery?tg=3">干果坚果</a><a href="/gallery?tg=4">风干美食</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=4">茶艺生活</a></p>
+					<p><a href="/gallery?tg=5">创意本</a><a href="/gallery?tg=6">茶滋茶味</a><a href="/gallery?tg=7">创意礼品杯</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=5">居家必备</a></p>
+					<p><a href="/gallery?tg=8">智能牙刷</a><a href="/gallery?tg=9">智能台灯/睡眠仪</a></p>
+					<p><a href="/gallery?tg=10">净水器</a><a href="/gallery?tg=11">空气净化器</a></p>
+				</div>
+			</div>
+			<div class="classify">
+				<p class="choose"><a href="/gallery?id=2">卧室用品</a></p>
+				<div class="dapu">
+					<p class="dapu_eat"><a href="/gallery?id=6">床品件套</a></p>
+					<p><a href="/gallery?tg=12">花鸟件套</a><a href="/gallery?tg=13">四件套/三件套</a></p>
+					<p><a href="/gallery?tg=14">床单床笠</a><a href="/gallery?tg=15">野生菌菇</a><a href="/gallery?tg=16">靠垫/靠垫套</a><a href="/gallery?tg=17">毯子</a></p>
+
+					<p class="dapu_eat"><a href="/gallery?id=7">被子枕头</a></p>
+					<p><a href="/gallery?tg=18">夏凉被</a><a href="/gallery?tg=19">秋冬被</a><a href="">枕头</a><a href="/gallery?tg=20">床垫</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=8">夏凉床品</a></p>
+					<p><a href="/gallery?tg=21">老粗布</a><a href="/gallery?tg=22">亚麻/棉麻凉席</a><a href="">蔺草席</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=9">家居拖鞋</a></p>
+					<p><a href="/gallery?tg=23">家居拖鞋</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=10">智能家居</a></p>
+					<p><a href="/gallery?tg=24">止鼾枕</a></p>
+					
+				</div>
+			</div>
+			<div class="classify">
+				<p class="choose"><a href="/gallery?id=3">浴室用品</a></p>
+				<div class="dapu">
+					<p class="dapu_eat"><a href="/gallery?id=11">毛巾浴巾</a></p>
+					<p><a href="/gallery?tg=25">洗浴套装</a><a href="/gallery?tg=26">毛巾</a><a href="/gallery?tg=27">方巾</a></p>
+					<p><a href="/gallery?tg=28">浴巾/浴袍</a></p>
+
+					<p class="dapu_eat"><a href="/gallery?id=12">地巾地垫</a></p>
+					<p><a href="/gallery?tg=29">地巾地垫</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=13">浴室拖鞋</a></p>
+					<p><a href="/gallery?tg=30">浴室拖鞋</a></p>
+				
+				</div>
+			</div>
+			<div class="classify">
+				<p class="choose"><a href="/gallery?id=4">清洁日用</a></p>
+				<div class="dapu">
+					<p class="dapu_eat"><a href="/gallery?id=14">个户清洁</a></p>
+					<p><a href="/gallery?tg=31">纸品/棉柔巾/棉签</a></p>
+
+					<p class="dapu_eat"><a href="/gallery?id=15">净化空气</a></p>
+					<p><a href="/gallery?tg=32">竹炭包</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=16">日常用品</a></p>
+					<p><a href="/gallery?tg=33">围裙</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=17">洗涤用品</a></p>
+					<p><a href="/gallery?tg=34">洗衣液/果蔬净/餐具净</a></p>
+				</div>
+			</div>
+			<div class="classify">
+				<p class="choose"><a href="/gallery?id=5">服饰</a></p>
+				<div class="dapu">
+					<p class="dapu_eat"><a href="/gallery?id=18">女士服饰</a></p>
+					<p><a href="/gallery?tg=35">T恤/背心</a><a href="/gallery?tg=36">衬衫</a><a href="/gallery?tg=37">卫衣/毛衫</a></p>
+
+					<p class="dapu_eat"><a href="/gallery?id=19">男士服饰</a></p>
+					<p><a href="/gallery?tg=38">T恤</a><a href="/gallery?tg=39">衬衫</a><a href="/gallery?tg=40">卫衣/毛衫</a><a href="">裤子</a></p>
+				</div>
+			</div>
+			<div class="classify">
+				<p class="choose"><a href="/gallery?id=6">贴身衣物</a></p>
+				<div class="dapu">
+					<p class="dapu_eat"><a href="/gallery?id=20">内衣女士</a></p>
+					<p><a href="/gallery?tg=41">文胸</a><a href="/gallery?tg=42">内裤</a><a href="/gallery?tg=43">保暖内衣</a></p>
+
+					<p class="dapu_eat"><a href="/gallery?id=21">女士袜子</a></p>
+					<p><a href="/gallery?tg=44">女袜</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=22">男士内衣</a></p>
+					<p><a href="/gallery?tg=45">内裤</a><a href="/gallery?tg=46">保暖内衣</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=23">男士袜子</a></p>
+					<p><a href="/gallery?tg=47">男袜</a></p>
+				</div>
+			</div>
+			<div class="classify">
+				<p class="choose"><a href="/gallery?id=7">婴童用品</a></p>
+				<div class="dapu">
+					<p class="dapu_eat"><a href="/gallery?id=24">婴童床品</a></p>
+					<p><a href="/gallery?tg=48">床品件套</a><a href="/gallery?tg=49">婴童凉席</a></p>
+					<p><a href="/gallery?tg=50">抱被/毯子/睡袋</a><a href="/gallery?tg=51">尿布/隔尿垫</a></p>
+					<p><a href="/gallery?tg=52">婴童枕头</a></p>
+
+					<p class="dapu_eat"><a href="/gallery?id=25">婴童鞋子</a></p>
+					<p><a href="/gallery?tg=53">婴童家居鞋</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=26">婴童洗浴</a></p>
+					<p><a href="/gallery?tg=54">浴巾/浴袍</a><a href="/gallery?tg=55">儿童方巾</a><a href="/gallery?tg=56">儿童毛巾</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=27">婴童衣物</a></p>
+					<p><a href="/gallery?tg=57">内裤</a><a href="/gallery?tg=58">袜子</a><a href="">上衣</a><a href="/gallery?tg=59">裤子</a></p>
+					<p><a href="/gallery?tg=60">连体衣/套装</a><a href="/gallery?tg=61">新生儿礼盒</a></p>
+				
+					<p class="dapu_eat"><a href="/gallery?id=28">亲子系列</a></p>
+					<p><a href="/gallery?tg=62">亲子灯</a><a href="/gallery?tg=63">亲子玩具</a></p>
+				</div>
+			</div>
+			<div class="classify">
+				<p class="choose"><a href="/gallery?id=8">包袋/周边</a></p>
+				<div class="dapu">
+					<p class="dapu_eat"><a href="/gallery?id=29">置物布包</a></p>
+					<p><a href="/gallery?tg=64">购物包/零钱包/杂物包</a></p>
+
+					<p class="dapu_eat"><a href="/gallery?id=30">棉仔周边</a></p>
+					<p><a href="/gallery?tg=65">棉仔衍生品</a><a href="/gallery?tg=66">棉仔公仔</a></p>
+				</div>
+			</div>
+			<div class="classify">
+				<p class="choose"><a href="/gallery?id=9">礼品周边</a></p>
+				<div class="dapu">
+					<p class="dapu_eat"><a href="/gallery?id=31">礼品卡</a></p>
+					<p><a href="/gallery?tg=68">礼品卡</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="product_list">
+			<p>
+				<span>大朴优选</span>
+				<span>商品筛选</span>
+				<a href="">重置筛选条件</a>
+			</p>
+			<div class="sort">
+				<p>
+					<span>排序方式：</span>
+					<a href="/gallery?id=2&order=4">最新</a>
+					<a href="/gallery?id=2&order=1">销量</a>
+					<a href="/gallery?id=2&order=3">价格-</a>
+					<a href="/gallery?id=2&order=2">价格+</a>
+				</p>
+				<div class="product_pic" id="list">
+					{% for foo in data %}
+						<dl>
+							<dt>
+								{% for img in imgs %}
+									{% for im in img %}
+										{% if im.shop_id == foo.id %}
+											<a href="{{ foo.id }}"><img src="//10.0.167.192:8000{{ im.top_url}}" id="{{ im.id }}"></a>
+										{% endif %}
+									{% endfor %}
+								{% endfor %}
+							</dt>
+
+							<dt>
+								{% for img in imgs %}
+									{% for im in img %}
+										{% if im.shop_id == foo.id %}
+											<a href="#{{ im.id }}"><img src="//10.0.167.192:8000{{ im.top_url}}"></a>
+										{% endif %}
+									{% endfor %}
+								{% endfor %}
+							</dt>
+
+							<dd>￥{{ foo.price }}</dd>
+							<dd>{{ foo.name }}</dd>
+						</dl>
+					{% endfor %}
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	$(".choose").on("click", function(){
+		$(this).siblings().show().end().parent().siblings().children('.dapu').hide();
+		<!--$(this).next().slideToggle('hide');-->
+	});
+
+</script>
+	</div>
+
+{% endblock %}
