@@ -11,7 +11,7 @@ cryptography==1.9
 cupshelpers==1.0
 defer==1.0.6
 distro-info==0.17
-Django==2.0.1
+Django==2.2.24
 guacamole==0.9.2
 html5lib==0.999999999
 httplib2==0.9.2
